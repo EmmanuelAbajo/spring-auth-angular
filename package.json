@@ -1,0 +1,14 @@
+{
+  "name": "spring-auth-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "angular": "cd client && ng serve",
+    "spring": "cd server && mvnw spring-boot:run",
+    "start:dev": "npm run angular && npm run spring",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
