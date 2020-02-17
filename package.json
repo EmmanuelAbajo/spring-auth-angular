@@ -6,9 +6,12 @@
   "scripts": {
     "angular": "cd client && ng serve",
     "spring": "cd server && mvnw spring-boot:run",
-    "start:dev": "npm run angular && npm run spring",
+    "start:dev": "concurrently \"npm run angular\" \"npm run spring\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
